@@ -6,23 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="assets/css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato|Roboto|Do+Hyeon|Cantarell:400i" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <header>
-        <div class="content">
-            <h1 class="headings-font">Tim Stevens</h1>
-            <nav>
-                <a id="about" href="index.html">About</a>
-                <a id="portfolio" href="portfolio.html">Portfolio</a>
-                <a id="contact" href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
-    <div class="content">
-        <div class="main-content">
-            <h2 class="headings-font">Project Portfolio</h2>
-            <hr id="hr2"/>
+    <div class="nav-div">
+        <h1 class="headings-font">Tim Stevens</h1>
+        <nav>
+            <a class='navlink' id="about" href="index.html">About</a>
+            <a class='navlink' id="portfolio" href="portfolio.html">Portfolio</a>
+            <a class='navlink' id="contact" href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h2 class="headings-font">Project Portfolio</h2>
+        <hr id="hr2"/>
         <div>    
             <div class="portf-box-left portf-box">
                 <img src="assets/images/portfolio_1.jpeg" alt="generic picture" class="portf-img">
@@ -34,36 +32,39 @@
             </div>
         </div>
         <div>
-            <div class="portf-box-left">
-                <img src="assets/images/portfolio_3.jpeg" alt="generic picture" class="portf-img">
-                <h4>Trivia Game</h4>
+                <div class="portf-box-left">
+                    <img src="assets/images/portfolio_3.jpeg" alt="generic picture" class="portf-img">
+                    <h4>Trivia Game</h4>
+                </div>
+                <div class="portf-box-right">
+                    <img src="assets/images/portfolio_4.jpeg" alt="generic picture" class="portf-img">
+                    <h4>Rutgers Info Widget</h4>
+                </div>
             </div>
-            <div class="portf-box-right">
-                <img src="assets/images/portfolio_4.jpeg" alt="generic picture" class="portf-img">
-                <h4>Rutgers Info Widget</h4>
+            <div>
+                <div class="portf-box-left">
+                    <img src="assets/images/portfolio_5.jpeg" alt="generic picture" class="portf-img">
+                    <h4>Rock Paper Scissors</h4>
+                </div>
             </div>
         </div>
-        <div>
-            <div class="portf-box-left">
-                <img src="assets/images/portfolio_5.jpeg" alt="generic picture" class="portf-img">
-                <h4>Rock Paper Scissors</h4>
-            </div>
-        </div>
-    </div>
     <div class="r-sidebar">
         <h3 class="headings-font">Connect with Me</h3>
         <hr id="hr3"/>
-        <a href="https://github.com/tmlstevens"><img src="assets/images/GitHub.png" alt="GitHub logo image" id="github"></a>
-        <a href="https://www.linkedin.com/in/tim-stevens-27796831/"><img src="assets/images/Linked-In.png" alt="Linked-In logo image" id="linkedin"></a>
-        <a href="https://www.pinterest.com/tim_stevens/"><img src="assets/images/Pinterest.png" alt="Pinterest logo image" id="pinterest"></a>
+        <div id='contact-container'>
+            <a href="https://github.com/tmlstevens"><img src="assets/images/GitHub.png" alt="GitHub logo image" class='connect' id='github' ></a>
+            <a href="https://www.linkedin.com/in/tim-stevens-27796831/"><img src="assets/images/Linked-In.png" alt="Linked-In logo image" class='connect' id='linkedin'></a>
+            <a href="https://www.pinterest.com/tim_stevens/"><img src="assets/images/Pinterest.png" alt="Pinterest logo image" class='connect' id='pinterest'></a>
+            <a href="mailto:tim.easyt@gmail.com"><img src="assets/images/mail.png" alt="email image" class='connect' id='mail' ></a>
+        </div>
     </div>
-    </div>
+    <!-- </div> -->
     <footer>
         <p id="mine">
         &#169;
         <script>
         document.write(new Date().getFullYear());
-        </script>, Tim Stevens
+        </script>&nbsp; Tim Stevens
         </p>
     </footer>
 </body>

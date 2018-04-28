@@ -3,92 +3,187 @@ body    {
         margin: 0;
         padding: 0;
         background-color: #d6d6d6;
-        font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
+        font-family: 'Roboto', 'sans-serif';
 }
-
-.content{
-        max-width: 960px;
-        min-width: 650px;
-        margin: auto;
-        padding: 0;
+.nav-div{
+        width: 61rem;
+        padding-left: calc((100vw - 60rem)/2);
+        padding-right: calc((100vw - 60rem)/2);
+        background-color: rgb(255, 255, 255);
+        height: 73px;
+        /* margin: auto;  centers child elements on the page */
+        /* padding: 0; */
 }
-
-header  {
-        width: 100vw;
+nav     {
+        padding: 36px 32px 16px 0;
+        font-family: 'Inconsolata', 'monospace';
+        font-size: 1.3em;
+        text-align: right;
+        background-color: rgb(255, 255, 255);
+}
+.main-content   {
+        float: left;
+        width: 43rem;
+        /* margin: 0px 40px 40px 0px; */
+        margin-top: 1.5rem;
+        margin-left: calc((100vw - 60rem)/2);
+        margin-right: 2rem;
+        padding-bottom: 4%; /* 2rem; */
+        background-color: white;
+        border-radius: 1%;
+        border-width: 4px;
+        border-top-color: rgba(125, 154, 177, 0.75);
+        border-left-color: rgb(125, 154, 177, 0.75);
+        border-right-color: rgba(70, 131, 180, 0.75);
+        border-bottom-color: rgba(70, 131, 180, 0.75);
+        border-style: outset;
+        box-shadow: 5px 5px 2px grey;
+}
+.r-sidebar  {
+        float: left;
+        width: 13rem;
+        height: 12rem;
+        margin: 2rem 0 5rem 0;
+        background-color: white;
+        border-radius: 2%;
+        border-width: 4px;
+        border-top-color: rgba(125, 154, 177, 0.75);
+        border-left-color: rgb(125, 154, 177, 0.75);
+        border-right-color: rgba(70, 131, 180, 0.75);
+        border-bottom-color: rgba(70, 131, 180, 0.75);
+        border-style: outset;
+        box-shadow: 5px 5px 2px grey;
+}
+/* header  {
+        min-width: 40vw;
+        max-width: 100vw;
         height: 5rem;
         background-color: white;
         margin-top: 0;
         margin-bottom: 3vh;
-}
-
-.headings-font  {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
+} */
 h1      {
         float: left;
-        width: 17rem;
-        height: 1em;
+        width: 20rem;
         margin: 0;
-        padding: 0.75em 0em 0.75em 0em;
+        padding: 16px 6px 16px 6px;
+        font-family: 'Cantarell'; /*, 'Do Hyeon' sans-serif */
         text-align: center;
-        letter-spacing: 0.05em;
-        font-weight: bold;
+        letter-spacing: 4px;
+        font-size: 31pt;
         color: rgb(255, 255, 255);
         background-color: steelblue;
 }
-
-nav     {
-        float: right;
-        width: 30vw;
-        height: 1em;
-        margin-right: 2em;
-        margin-left: 5vw;
-        padding: 2em 0em 2em 0em;
-        text-align: right;
-}
-
-a       {
-        color: steelblue;
-}
-#about  {
-        padding-right: 3vw;
-}
-#portfolio  {
-        padding-right: 3vw;
-}
-
-.main-content   {
-        float: left;
-        width: 650px;
-        margin: 0px 40px 40px 0px;
-        background-color: white;
-}
-
 h2      {
         margin: 2rem 0rem 0.5rem 2rem;
         text-align: left;
         color: steelblue;
 }
+h3      {
+        font-size: 1.35rem;
+        margin: 8% 5% 5% 5%;
+        padding: 0;
+        width: 90%;
+        text-align: center;
+        color: steelblue;
+}
+#about  {
+}
+#about:hover {
+        transform: scale(1.5);
+}
+#portfolio  {
+        padding-right: 1em;
+        padding-left: 1em
+}
+#contact {
+}
+a       {
+        color: steelblue;
+        text-decoration-line: none; 
+}
+.connect {
+        margin: 0.75rem;
+        transition: transform .4s;
+}
+.connect:hover {
+        transform: scale(1.2);
+}
+#github {
+        padding: 8% 2% 4% 8%;
+        margin: 0;
+}
+#linkedin {
+        padding: 8% 2% 4% 2%;
+        margin: 0;
+}
+#pinterest {
+        padding: 8% 8% 4% 2%;
+        margin: 0;
+}
+#mail {
+        padding: 0 5% 6% 8%;
+        margin: 0;
+}
 
-#hr2    {  
+/* .content {
+        max-width: 60rem;
+        margin-left: calc((100vw - 60rem)/2);
+        padding-right: calc((100vw - 60rem)/2);
+        background-color: rgb(255, 255, 255); */
+        /* height: 73px; /* 4em also renders 73px */
+        /* margin: auto;  centers child elements on the page */
+        /* padding: 0; */
+/* } */
+
+/* #hr3    {
+        height: 3px;
+        margin-bottom: 0;
+        margin-top: 0;
+        border: 0;
+        width: 13rem;
+        background-color: #f5f5f5;
+} */
+/* #contact-container {
+        padding: 3% 10% 3% 12%;
+        height: 65%;
+        /* padding: 0.5rem 2rem 0 2rem */
+
+
+
+hr    {  
+        height: 3px;
+        width: 92%;
+        margin: 0 4% 0 4%;
+        border: 0;
+        background-color: #f5f5f5;
+}
+/* #hr2    {  
         height: 3px;
         margin: 0rem 2rem 0rem 2rem;
         border: 0;
         background-color: #f5f5f5;
-}
+} */
 
 #fish-pic  {
         float: left;
         vertical-align: top;
         width: 30%;
-        margin: 0 1rem 0 0;
+        margin: 0 1.1rem 0 0;
+        transition: transform .4s;
 }
-
+#fish-pic:hover {
+        transform: scale(1.5);
+}
 p       {
+        text-indent: 5%;
         margin: 1rem 2rem 2rem 2rem;
         line-height: 1.15em;
         color: rgb(44, 53, 61);
+        font-size: 1rem;
+        font-style: Light;
+        /* letter-spacing: 0.05rem; */
+        line-height: 1.6rem
 }
 
 .portf-box-left  {
@@ -157,45 +252,6 @@ input[type="submit"]    {
         background-color: rgb(59, 163, 59);
 }
 
-.r-sidebar  {
-        float: left;
-        width: 210px;
-        margin: 0px 0px 40px 0px;
-        padding: 1% 2% 1% 2%;
-        background-color: white;
-}
-
-h3      {
-        margin-bottom: 0.5em;
-        padding: 0;
-        text-align: center;
-        color: steelblue;
-}
-
-#hr3    {
-        height: 2px;
-        margin-bottom: 1em;
-        margin-top: 0.25em;
-        border: 0;
-        background-color: #f5f5f5;
-}
-
-#github {
-        width: 50px;
-        margin-left: 14px;
-}
-
-#linkedin {
-        width: 50px;
-        margin-right: 11px;
-        margin-left: 11px;
-}
-
-#pinterest {
-        width: 50px;
-        margin-right: 14px;
-}
-
 footer  {
         width: 100vw;
         height: 2.5rem;
@@ -203,7 +259,6 @@ footer  {
         bottom: 0;
         background-color: steelblue;
 }
-
 /* style for footer blurb */
 #mine   {
         width: 100vw;
@@ -216,339 +271,3 @@ footer  {
         color: white;
 }
 
-@media only screen and (max-width: 980px) {
-        .content{
-                max-width: 768px;
-        }
-        nav     {
-                float: right;
-                width: 30vw;
-                margin-left: 0;
-                padding: 2em 0em 2em 0em;
-        }
-        #about  {
-                padding-right: 3vw;
-        }
-        #portfolio  {
-                padding-right: 3vw;
-        }
-        .main-content   {
-                float: left;
-                width: 475px;
-                margin-bottom: 6rem;
-                padding-bottom: 2rem;
-        }
-        #fish-pic  {
-                float: left;
-                vertical-align: top;
-                width: 100%;
-                margin: 0.5rem 0 1rem 0;
-        }
-        p       {
-                float: left;
-                vertical-align: bottom;
-                margin: 0.5rem 2rem 0rem 2rem;
-        }
-        .portf-box-left  {
-                float: left;
-                width: 190px;
-                height: 160px;
-                margin: 1.5rem 0rem 1rem 2rem;
-                background-color: mediumaquamarine;
-        }
-        .portf-box-right  {
-                float: right;
-                width: 190px;
-                height: 160px;
-                margin: 1.5rem 2rem 1rem 0rem;
-                background-color: mediumaquamarine;
-        }
-        .portf-img      {
-                position: relative;
-                width: 100%;
-        }
-        h4      {
-                position: relative;
-                color: white;
-                letter-spacing: 0.07em;
-                margin: -3rem 0rem 1rem 0rem;
-                padding: 1rem 0rem 1rem 0rem;
-                text-align: center;
-                vertical-align: bottom;
-                background-color: steelblue;
-        }
-        .top-lbl   {
-                margin-top: 2rem; 
-        }
-        /* style for other form field labels on contact form */
-        label   {
-                width: 42vw;
-                float: left;
-                margin: 0rem 2rem 0.2rem 2rem;
-        }
-        input     {
-                float: left;
-                width: 42vw;
-                height: 1.35rem;
-                margin: 0rem 2rem 2rem 2rem;
-                font-size: medium;
-        }
-        textarea    {
-                width: 42vw;
-                height: 9rem;
-                vertical-align: top;
-                margin: 0rem 2rem 2rem 2rem;
-                font-size: 1rem;
-                color: gray;
-                border-color: rgb(204, 203, 203);
-        }
-        input[type="submit"]    {
-                float: left;
-                width: 100px;
-                height: 2rem;
-                margin-bottom: 0;
-                background-color: rgb(59, 163, 59);
-        }
-}
-
-@media only screen and (max-width: 768px) {
-        
-        .content{
-                width: 90vw;
-        }
-        .main-content   {
-                width: 90vw;
-                margin-bottom: 2rem;
-                padding-bottom: 2rem;
-        }
-        nav     {
-                float: right;
-                width: 30vw;
-                margin-left: 0;
-                padding: 2em 0em 2em 0em;
-        }
-        #about  {
-                padding-right: 2vw;
-        }
-        #portfolio  {
-                padding-right: 2vw;
-        }
-
-        #fish-pic  {
-                float: left;
-                vertical-align: top;
-                width: 35%;
-                margin: 0 0 0.5rem 0;
-                padding-right: 1rem;
-        }
-        p       {
-                float: right;
-                vertical-align: top;
-                line-height: 1.15em;
-                color: rgb(44, 53, 61);
-                margin: 1rem 2rem 0rem 2rem;
-        }
-        .portf-box-left  {
-                float: left;
-                width: 40vw;
-                height: 160px;
-                margin: 1.5rem 0rem 7rem 2rem;
-                background-color: mediumaquamarine;
-        }
-        .portf-box-right  {
-                float: right;
-                width: 40vw;
-                height: 160px;
-                margin: 1.5rem 2rem 7rem 0rem;
-                background-color: mediumaquamarine;
-        }
-        .portf-img      {
-                position: relative;
-                width: 100%;
-        }
-        h4      {
-                position: relative;
-                color: white;
-                letter-spacing: 0.07em;
-                margin: -3rem 0rem 1rem 0rem;
-                padding: 1rem 0rem 1rem 0rem;
-                text-align: center;
-                /* vertical-align: bottom; */
-                background-color: steelblue;
-        }
-
-        .top-lbl   {
-                margin-top: 2rem; 
-        }
-        
-        /* style for other form field labels on contact form */
-        label   {
-                width: 81vw;
-                float: left;
-                margin: 0rem 2rem 0.2rem 2rem;
-        }
-        
-        input     {
-                float: left;
-                width: 81vw;
-                height: 1.35rem;
-                margin: 0rem 2rem 2rem 2rem;
-                font-size: medium;
-        }
-        
-        textarea    {
-                float: left;
-                width: 81vw;
-                height: 9rem;
-                vertical-align: top;
-                margin: 0rem 2rem 2rem 2rem;
-                font-size: 1rem;
-                color: gray;
-                border-color: rgb(204, 203, 203);
-        }
-        
-        input[type="submit"]    {
-                float: left;
-                width: 100px;
-                height: 2rem;
-                margin-bottom: 0;
-                background-color: rgb(59, 163, 59);
-        }
-        .r-sidebar  {
-                float: left;
-                width: 210px;
-                margin-top: 0;
-                margin-bottom: 4rem;
-                /* margin-left: 5vw; */
-                padding: 1% 2% 1% 2%;
-                background-color: white;
-        }
-}
-
-@media only screen and (max-width: 640px) {
-        
-        .header  {
-                position: static;
-                width: 100vw;
-                height: 20px;
-                background-color: white;
-                margin: 0;
-        }
-        h1      {
-                width: 100vw;
-                height: 30px;
-                margin: 0;
-                padding-top: 10px;
-                padding-bottom: 10px;
-        }
-        nav     {
-                background-color: white;
-                float: left;
-                width: 100vw;
-                height: 10px;
-                padding-top: 1em;
-                padding-bottom: 1em;
-                text-align: center;
-                margin-bottom: 2rem;
-                margin-right: 2.25vw;
-                margin-left: 0;
-        }
-        #about  {
-                padding-right: 20vw;
-        }
-        #portfolio  {
-                padding-right: 20vw;
-        }
-        .content  {
-                float: left;
-        }
-        .main-content   {
-                float: left;
-                width: 95vw;
-                margin-bottom: 2rem;
-                /* margin-right: 0; */
-                margin-left: 2vw;
-                padding-bottom: 2rem;
-        }
-        #fish-pic  {
-                float: left;
-                vertical-align: top;
-                width: 86vw;
-                margin: 0 0 1rem 0rem;
-        }
-        p       {
-                float: left;
-                vertical-align: top;
-                line-height: 1.15em;
-                color: rgb(44, 53, 61);
-                margin: 0.5rem 2rem 0rem 2rem;
-        }
-        .portf-box-left  {
-                float: left;
-                width: 40vw;
-                height: 160px;
-                margin: 1.5rem 0rem 7rem 2rem;
-                background-color: mediumaquamarine;
-        }
-        .portf-box-right  {
-                float: right;
-                width: 40vw;
-                height: 160px;
-                margin: 1.5rem 2rem 7rem 0rem;
-                background-color: mediumaquamarine;
-        }
-        .portf-img      {
-                position: relative;
-                width: 100%;
-        }
-        h4      {
-                position: relative;
-                color: white;
-                letter-spacing: 0.07em;
-                margin: -3rem 0rem 1rem 0rem;
-                padding: 1rem 0rem 1rem 0rem;
-                text-align: center;
-                background-color: steelblue;
-        }
-        .top-lbl   {
-                margin-top: 2rem; 
-        } 
-        label   {
-                width: 81vw;
-                float: left;
-                margin: 0rem 2rem 0.2rem 2rem;
-        }      
-        input     {
-                float: left;
-                width: 81vw;
-                height: 1.35rem;
-                margin: 0rem 2rem 2rem 2rem;
-                font-size: medium;
-        }    
-        textarea    {
-                float: left;
-                width: 81vw;
-                height: 9rem;
-                vertical-align: top;
-                margin: 0rem 2rem 2rem 2rem;
-                font-size: 1rem;
-                color: gray;
-                border-color: rgb(204, 203, 203);
-        }  
-        input[type="submit"]    {
-                float: left;
-                width: 100px;
-                height: 2rem;
-                margin-bottom: 0;
-                background-color: rgb(59, 163, 59);
-        }
-        .r-sidebar  {
-                float: left;
-                width: 210px;
-                margin-top: 0;
-                margin-left: 2vw;
-                margin-bottom: 4rem;
-                padding: 1% 2% 1% 2%;
-                background-color: white;
-                }
-}

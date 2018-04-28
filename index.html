@@ -4,47 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link href="assets/css/reset.css" rel="stylesheet" type="text/css"/>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato|Roboto|Do+Hyeon|Cantarell:400i|Open+Sans:300i,400,400i|Play|Playfair|Playfair+Display" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Tim Stevens</title>
 </head>
 <body>
-    <header>
-        <div class="content">
-            <h1 class="headings-font">Tim Stevens</h1>
-            <nav>
-                <a id="about" href="index.html">About</a>
-                <a id="portfolio" href="portfolio.html">Portfolio</a>
-                <a id="contact" href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
-    <div class="content">
-        <div class="main-content">
-            <h2 class="headings-font">About Me</h2>
-            <hr id="hr2"/>
-            <div class="clearfix">
-                <p>
-                <img src="assets/images/2018-01-26.jpg" alt="Recent fishing trip" id="fish-pic" height=15% width=15%>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu hendrerit lectus. Aliquam semper est vel lobortis congue. Phasellus sem enim, egestas non ultricies at, imperdiet sit amet augue. Nunc ac turpis non nisl mattis faucibus ut at purus. Curabitur tempor, magna in rutrum volutpat, velit orci bibendum arcu, et hendrerit erat felis id lectus. Pellentesque ultricies fringilla lacus ut luctus. Nullam tincidunt lorem eget lorem convallis efficitur. Nulla ex elit, consequat eget faucibus in, lacinia et neque. Nam vitae magna orci. Morbi nec mauris sem. Aenean ligula lacus, hendrerit sed sem et, dictum imperdiet tortor.
-                </p>
-            </div>
-        </div>
-        <div class="r-sidebar">
-            <h3 class="headings-font">Connect with Me</h3>
-            <hr id="hr3"/>
-            <a href="https://github.com/tmlstevens"><img src="assets/images/GitHub.png" alt="GitHub logo image" id="github"></a>
-            <a href="https://www.linkedin.com/in/tim-stevens-27796831/"><img src="assets/images/Linked-In.png" alt="Linked-In logo image" id="linkedin"></a>
-            <a href="https://www.pinterest.com/tim_stevens/"><img src="assets/images/Pinterest.png" alt="Pinterest logo image" id="pinterest"></a>
-        </div>
+    <div class="nav-div">
+        <nav>
+            <a class='navlink' id="about" href="index.html">About</a>
+            <a class='navlink' id="reviews" href="reviews.html">Reviews</a>
+            <a class='navlink' id="unblog" href="portfolio.html">Portfolio</a>
+            <a class='navlink' id="contact" href="mailto:tim.easyt@gmail.com?subject=from%20your%20github.io%20site&body=Tim," target="_top">Contact</a>
+        </nav>
+    </div>
+    <div class='content-container' id='content-container-about'>
+        <h1>Tim Stevens</h1>
+        <h3>Full Stack Web Developer</h3>
+        <h4 style='margin-bottom:1rem'>My Elevator Pitch...</h4>
+        <p>My professional experience includes fisheries biology, operations management, information systems, software release management, testing, support, deployment of SaaS platforms, and software product management. In each role I gained experience, perspective, and skills that equipped me for the next. After fifteen years of wearing various information technology hats I realized full-stack web development was the next right step. Two months into my training as a full-stack web developer, it became obvious this was the right move. Although presently junior in my coding skills, I bring a boatload of valuable experience and perspective to the local dev environment.</p>
+        <p>Imagine a software engineer who has been virtually every type of software stakeholder - business analyst, customer liason and representative, launch specialist, user trainer, end user, tester, scrum master, product owner, and project manager. Someone who understands the perspective of every stakeholder. That's me.</p>
+        <h4 style='margin:2rem 0 1rem 0'>Strengths and Weaknesses...</h4>
+        <p>I'm honest to a flaw as you're about to read. I enjoy learning new technologies and consider myself a slow learner, but my work ethic and diligence are strong and always help me find my legs. I prefer to understand what I'm coding rather than pasting a snippet that I don't. My professional strengths include software requirements, usability enhancements, debugging, process, and building customer rapport. My weaknesses include UI work - the immediate visual return on my markup tends to lead me all over the page. Other weaknesses include: drinking too much company coffee, and rolling my eyes when youngsters assert themselves as software experts after reading a few blogs. I'd rather spend 8 hours working, than 30 minutes talking about it. Give me a toolbox, I'll dump it out, take a quick inventory, and get the job done as best I can.</p>
+        <h4 style='margin:2rem 0 1rem 0'>Personal Life...</h4>
+        <p>When I'm not learning, working, or coding a side project you can find me with my family, kayak fishing when we get the chance, following our boys' baseball a lot of the time, building furniture when it's not too hot in the garage, hanging out, working out a few days each week, cooking out on the weekends, and fixing whatever breaks arund the house. I enjoy working with kids of all ages, especially my own. I love my wife (Lynne) of 20+ years, and we're more than proud of our daughter and sons. Samantha is a great writer and artist, very creative, and a free-spirit. Lucas inherited my passion for fishing, while James is showing a solid interest in programming and making crazy videos. I graduated from Texas Tech University in 1999, spent a few years in the panhandle, 7 years in Alabama, a year in Houston, and arrived in the Dallas area in 2010. I plan to be here for a while.</p>
+    </div>
+    <div class='img-container' id='img-container-about'>
+        <div class='page-img' id='img-about' style='background-image: url(assets/images/DSCN1308.jpg);'></div>
     </div>
     <footer>
-        <p id="mine">
-        &#169;
-        <script>
-        document.write(new Date().getFullYear());
-        </script>, Tim Stevens
+        <p>&#169;
+            <script>document.write(new Date().getFullYear());</script>
+            -&nbsp;Tim Stevens
         </p>
     </footer>
+
+
+    <script src='assets/javascript/site.js'></script>
 </body>
 </html>

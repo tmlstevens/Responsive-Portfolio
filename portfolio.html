@@ -4,68 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link href="assets/css/reset.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato|Roboto|Do+Hyeon|Cantarell:400i" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato|Roboto|Do+Hyeon|Cantarell:400i|Open+Sans:300i,400,400i|Play|Playfair|Playfair+Display" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <title>Tim Stevens</title>
 </head>
 <body>
     <div class="nav-div">
-        <h1 class="headings-font">Tim Stevens</h1>
         <nav>
             <a class='navlink' id="about" href="index.html">About</a>
-            <a class='navlink' id="portfolio" href="portfolio.html">Portfolio</a>
-            <a class='navlink' id="contact" href="contact.html">Contact</a>
+            <a class='navlink' id="reviews" href="reviews.html">Reviews</a>
+            <a class='navlink' id="unblog" href="portfolio.html">Portfolio</a>
+            <a class='navlink' id="contact" href="mailto:tim.easyt@gmail.com?subject=from%20your%20github.io%20site&body=Tim," target="_top">Contact</a>
         </nav>
     </div>
-    <div class="main-content">
-        <h2 class="headings-font">Project Portfolio</h2>
-        <hr id="hr2"/>
-        <div>    
-            <div class="portf-box-left portf-box">
-                <img src="assets/images/portfolio_1.jpeg" alt="generic picture" class="portf-img">
-                <h4><a style="color:white" href="https://tmlstevens.github.io/Psychic-Game/index.html">Psychic Game</a></h4>
-            </div>
-            <div class="portf-box-right">
-                <img src="assets/images/portfolio_2.jpeg" alt="generic picture" class="portf-img">
-                <h4><a style="color:white" href="https://tmlstevens.github.io/week-4-game/index.html">Crystal Collector</a></h4>
+        <div class='content-container' id='content-container-portfolio'>
+            <h1>My Coding Projects</h1>
+                <div class='portfolio-item' id='calendar'>
+                    <a href='https://tmlstevens.github.io/calendar/index.html' target="_blank">
+                        <h3>Personal Calendar</h3>
+                    </a>
+                    <img src='assets/images/calendar.png'>
+                    <p class='tech'>Technologies</p>
+                    <p>JavaScript</p>
+                    <p>Moment.js</p>
+                    <p>Firebase</p>
+                    <p>JQuery</p>
+                    <p>Bootstrap</p>
+                    <p>CSS</p>
+                    <p>HTML</p>
+                </div>
+                <div class='portfolio-item' id='scheduler'>
+                    <a href='https://tmlstevens.github.io/train-scheduler/scheduler.html' target="_blank">
+                        <h3>Route Scheduler</h3>
+                    </a>
+                    <img src='assets/images/scheduler.png'>
+                    <p class='tech'>Technologies</p>
+                    <p>JavaScript</p>
+                    <p>Moment.js</p>
+                    <p>Firebase</p>
+                    <p>JQuery</p>
+                    <p>Bootstrap</p>
+                    <p>CSS</p>
+                    <p>HTML</p>
+                </div>
+                <div class='portfolio-item' id='collector'>
+                    <a href='https://tmlstevens.github.io/week-4-game/' target="_blank">
+                        <h3>Crystal Collector</h3>
+                    </a>
+                    <img src='assets/images/collector.png'>
+                    <p class='tech'>Technologies</p>
+                    <p>JavaScript</p>
+                    <p>JQuery</p>
+                    <p>CSS</p>
+                    <p>HTML</p>
+                </div>
+            
+            
+        </div>
+        <div class='img-container' id='img-container-portfolio'>
+            <div class='page-img' id='img-portfolio'>
+                <i class="fab fa-github" style='font-size:5em; color:black';></i>
+                <img src='assets/images/jquery.png' style='width:10em;'>
             </div>
         </div>
-        <div>
-                <div class="portf-box-left">
-                    <img src="assets/images/portfolio_3.jpeg" alt="generic picture" class="portf-img">
-                    <h4>Trivia Game</h4>
-                </div>
-                <div class="portf-box-right">
-                    <img src="assets/images/portfolio_4.jpeg" alt="generic picture" class="portf-img">
-                    <h4>Rutgers Info Widget</h4>
-                </div>
-            </div>
-            <div>
-                <div class="portf-box-left">
-                    <img src="assets/images/portfolio_5.jpeg" alt="generic picture" class="portf-img">
-                    <h4>Rock Paper Scissors</h4>
-                </div>
-            </div>
-        </div>
-    <div class="r-sidebar">
-        <h3 class="headings-font">Connect with Me</h3>
-        <hr id="hr3"/>
-        <div id='contact-container'>
-            <a href="https://github.com/tmlstevens"><img src="assets/images/GitHub.png" alt="GitHub logo image" class='connect' id='github' ></a>
-            <a href="https://www.linkedin.com/in/tim-stevens-27796831/"><img src="assets/images/Linked-In.png" alt="Linked-In logo image" class='connect' id='linkedin'></a>
-            <a href="https://www.pinterest.com/tim_stevens/"><img src="assets/images/Pinterest.png" alt="Pinterest logo image" class='connect' id='pinterest'></a>
-            <a href="mailto:tim.easyt@gmail.com"><img src="assets/images/mail.png" alt="email image" class='connect' id='mail' ></a>
-        </div>
-    </div>
-    <!-- </div> -->
     <footer>
-        <p id="mine">
-        &#169;
-        <script>
-        document.write(new Date().getFullYear());
-        </script>&nbsp; Tim Stevens
-        </p>
-    </footer>
-</body>
-</html>
+            <p>&#169;
+            <script>document.write(new Date().getFullYear());</script>-&nbsp;Tim Stevens
+            </p>
+        </footer>
+            
+            
+        <script src='assets/javascript/site.js'></script>
+    </body>
+    </html>
